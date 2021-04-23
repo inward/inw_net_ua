@@ -1,12 +1,11 @@
 from django.shortcuts import render
 
-from .forms import YoutubeForm, DateForm
+from .forms import YoutubeForm
 from .video import get_videos
 
 
 def youtube(request):
     form = YoutubeForm()
-    #df = DateForm()
     content = {}
     video_data = {}
     if request.method == 'POST':

@@ -4,5 +4,13 @@ my Title
 {% endblock %}
 
 {% block content %}
-my Content
+    <form action="">
+    {{ form }}
+    <button type="submit" class="btn btn-outline-primary">Go</button>
+    </form>
+
+    {% for video_datum in video_data %}
+        video_datum.title
+    {% endfor %}
+
 {% endblock %}
